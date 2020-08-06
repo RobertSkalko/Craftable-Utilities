@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "CCC",
+    " C ",
     "CAC",
-    "BBB"
+    " B "
   ],
   "key": {  
-	"C": {
-      "item": "minecraft:gold_ingot"
+	"A": {
+      "item": "minecraft:gold_block"
     }, 
-	"B": {
+	"C": {
       "item": "minecraft:bone"
     }, 
-	"A": {
+	"B": {
       "item": "minecraft:paper"
     }
   },

@@ -7,16 +7,17 @@
   ],
   "key": {  
 	"C": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:iron_ingot"
     }, 
 	"B": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:coal"
     }, 
 	"A": {
-      "item": "minecraft:paper"
+      "item": "minecraft:iron_pickaxe"
     }
   },
   "result": {
-    "item": "craftable_utilities:spawn_teleport"
+    "item": "craftable_utilities:obsidian_consumer",
+	"count": 8
   }
 }

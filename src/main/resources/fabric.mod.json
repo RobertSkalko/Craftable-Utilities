@@ -3,7 +3,7 @@
   "id": "craftable_utilities",
   "version": "1.0.0",
   "name": "Craftable Utilities",
-  "description": "Create various useful consumable items like: Home teleport scrolls, Obsidian Miners etc.",
+  "description": "Create various useful consumable items like: Home teleport scrolls, Obsidian Miners and so on.",
   "authors": [
     "mcrobertx22"
   ],
@@ -28,9 +28,7 @@
 	"minecraft": "1.16.1",	
     "fabricloader": ">=0.9.0",   
 	"fabric": ">=0.15.0",
-	"library_of_exile": ">=1.0.0",
-	"cloth-config2": "*",
-	"autoconfig1u": "*",
+	"library_of_exile": ">=1.0.1",
 	"cardinal-components-base": ">=2.4.2",
 	"cardinal-components-entity": ">=2.4.2",
 	"cardinal-components-world": ">=2.4.2"	

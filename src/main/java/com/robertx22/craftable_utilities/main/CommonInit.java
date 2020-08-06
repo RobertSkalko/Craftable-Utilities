@@ -1,25 +1,18 @@
 package com.robertx22.craftable_utilities.main;
 
 import com.robertx22.library_of_exile.events.base.EventConsumer;
-import com.robertx22.library_of_exile.events.base.ExileEventCaller;
 import com.robertx22.library_of_exile.events.base.ExileEvents;
-import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
-import me.sargunvohra.mcmods.autoconfig1u.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 public class CommonInit implements ModInitializer {
-
-    public static ExileEventCaller<ExileEvents.OnMobDeath> PLAYER_DEATH_EVENT = new ExileEventCaller();
 
     @Override
     public void onInitialize() {
         Items.INSTANCE = new Items();
         Components.INSTANCE = new Components();
 
-        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
-
-        CommonInit.PLAYER_DEATH_EVENT.register(new EventConsumer<ExileEvents.OnMobDeath>() {
+        ExileEvents.PLAYER_DEATH.register(new EventConsumer<ExileEvents.OnMobDeath>() {
             @Override
             public void accept(ExileEvents.OnMobDeath event) {
                 if (event.mob instanceof ServerPlayerEntity) {
