@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.robertx22.craftable_utilities.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    	
+  ],
+  "client": [	
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

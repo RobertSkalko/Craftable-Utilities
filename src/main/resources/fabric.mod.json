@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "craftable_utilities",
+  "version": "1.0.0",
+  "name": "Craftable Utilities",
+  "description": "Create various useful consumable items like: Home teleport scrolls, Obsidian Miners etc.",
+  "authors": [
+    "mcrobertx22"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/craftable-utilities",
+    "sources": "https://github.com/RobertSkalko/craftable-utilities"
+  },
+  "license": "",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main":   ["com.robertx22.craftable_utilities.main.CommonInit"],
+	"client": ["com.robertx22.craftable_utilities.main.ClientInit"],
+	"modmenu":["com.robertx22.craftable_utilities.main.ModMenuIntegration"]	
+  },
+  "mixins": [   
+  "craftable_utilities.mixins.json"
+  ],
+
+  "depends": { 
+	"minecraft": "1.16.1",	
+    "fabricloader": ">=0.9.0",   
+	"fabric": ">=0.15.0",
+	"library_of_exile": ">=1.0.0",
+	"cloth-config2": "*",
+	"autoconfig1u": "*",
+	"cardinal-components-base": ">=2.4.2",
+	"cardinal-components-entity": ">=2.4.2",
+	"cardinal-components-world": ">=2.4.2"	
+  },
+  "suggests": {   
+  }
+  
+}
