@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "craftable_utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Craftable Utilities",
   "description": "Create various useful consumable items like: Home teleport scrolls, Obsidian Miners and so on.",
   "authors": [

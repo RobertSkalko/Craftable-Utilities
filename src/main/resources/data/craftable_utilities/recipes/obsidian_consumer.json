@@ -7,7 +7,7 @@
   ],
   "key": {  
 	"C": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:diamond"
     }, 
 	"B": {
       "item": "minecraft:coal"
@@ -18,6 +18,6 @@
   },
   "result": {
     "item": "craftable_utilities:obsidian_consumer",
-	"count": 8
+	"count": 12
   }
 }

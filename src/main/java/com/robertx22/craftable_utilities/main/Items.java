@@ -4,6 +4,7 @@ import com.robertx22.craftable_utilities.EntityData;
 import com.robertx22.craftable_utilities.items.ConsumableItem;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -52,7 +53,8 @@ public class Items {
         }
     });
 
-    public Item OBSIDIAN_CONSUMER = Registry.register(Registry.ITEM, new Identifier(Ref.ID, "obsidian_consumer"), new Item(new Item.Settings().maxCount(64)) {
+    public Item OBSIDIAN_CONSUMER = Registry.register(Registry.ITEM, new Identifier(Ref.ID, "obsidian_consumer"), new Item(new Item.Settings().maxCount(64)
+        .group(ItemGroup.MISC)) {
         @Override
         public ActionResult useOnBlock(ItemUsageContext ctx) {
             if (ctx.getWorld()

@@ -3,6 +3,7 @@ package com.robertx22.craftable_utilities.items;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.particle.ParticleTypes;
@@ -15,7 +16,8 @@ import net.minecraft.world.World;
 public abstract class ConsumableItem extends Item {
 
     public ConsumableItem() {
-        super(new Settings().maxCount(16));
+        super(new Settings().maxCount(16)
+            .group(ItemGroup.MISC));
     }
 
     public abstract ItemStack onDoneUsing(ItemStack stack, World world, ServerPlayerEntity user);
