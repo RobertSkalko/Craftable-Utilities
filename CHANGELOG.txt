@@ -1,3 +1,6 @@
+v.1.0.2
+- added chinese lang
+
 v.1.0.1
 - made obsidian muncher require diamond in recipe
 

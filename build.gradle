@@ -40,7 +40,7 @@ dependencies {
     modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-world:${cardinal_version}"  
     modApi "io.github.prospector:modmenu:${mod_menu_version}"
 
-    compile files("Library-Of-Exile-1.16.1-1.0.1-dev.jar")
+    compile files("Library-Of-Exile-1.16.1-1.0.2-dev.jar")
 }
 
 processResources {
@@ -97,8 +97,7 @@ curseforge {
 
         relations {
             requiredDependency 'fabric-api'
-            requiredDependency 'library-of-exile'
-            requiredDependency 'cardinal-components'           
+            requiredDependency 'library-of-exile'                  
         }
         mainArtifact(remapJar)
 
