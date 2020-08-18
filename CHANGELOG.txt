@@ -1,4 +1,6 @@
 v.1.0.2
+
+- 1.16.2 port
 - added chinese lang
 
 v.1.0.1

@@ -38,9 +38,10 @@ dependencies {
     modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${cardinal_version}"
     modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${cardinal_version}"
     modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-world:${cardinal_version}"  
+	
     modApi "io.github.prospector:modmenu:${mod_menu_version}"
 
-    compile files("Library-Of-Exile-1.16.1-1.0.2-dev.jar")
+    compile files("Library-Of-Exile-1.16.2-1.0.2-dev.jar")
 }
 
 processResources {
@@ -91,7 +92,7 @@ curseforge {
         releaseType = "${curse_release}"
         changelogType = 'text'
         changelog = file('CHANGELOG.txt')
-        addGameVersion("1.16.1")
+        addGameVersion("${project.minecraft_version}")
         addGameVersion("Fabric")
         addGameVersion("Java 8")
 

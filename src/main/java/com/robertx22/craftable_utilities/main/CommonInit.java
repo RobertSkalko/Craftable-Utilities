@@ -18,7 +18,7 @@ public class CommonInit implements ModInitializer {
                 if (event.mob instanceof ServerPlayerEntity) {
                     try {
                         Components.INSTANCE.ENTITY_DATA.get(event.mob).pos = event.mob.getBlockPos();
-                        Components.INSTANCE.ENTITY_DATA.get(event.mob).dim = event.mob.world.getDimensionRegistryKey()
+                        Components.INSTANCE.ENTITY_DATA.get(event.mob).dim = event.mob.world.getRegistryKey()
                             .getValue()
                             .toString();
                     } catch (Exception e) {
